@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft PvP Championship - Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <h2>MCTiers League</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 style="text-align: center;">Player Registration Form</h1>
+        <p style="text-align: center;">Fill out the form below to register for upcoming qualification duels.</p>
+
+        <form id="registration-form" action="#" method="post">
+            
+            <div class="form-group">
+                <label for="username">Minecraft Username / IGN:</label>
+                <input type="text" id="username" name="username" placeholder="e.g. Steve_PvP" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Contact Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="discipline">Preferred Discipline (Kit):</label>
+                <select id="discipline" name="discipline" required>
+                    <option value="sword">Sword 1.9+</option>
+                    <option value="pot">PotPvP</option>
+                    <option value="uhc">UHC</option>
+                    <option value="crystal">Crystal PvP</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">PvP Experience & Discord Tag:</label>
+                <textarea id="experience" name="experience" rows="5" placeholder="Include your Discord tag and previous competitive experience..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Application</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Created by: Batyrkhan Uvayev & Yermek Sain | 2026</p>
+    </footer>
+
+</body>
+</html>
