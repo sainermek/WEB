@@ -3,67 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft PvP Championship - Registration</title>
+    <title>Registration - Minecraft PvP Championship</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header id="main-header">
-        <div class="container">
-            <div class="header-brand">
-                <img src="images/Gemini_Generated_Image_re1tjsre1tjsre1t-removebg-preview.png" alt="MCTiers Logo" class="logo-img">
-                <h2>MCTiers League</h2>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="leaderboard.html">Leaderboard</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html" class="active">Registration</a></li>
-                </ul>
-            </nav>
+<div class="page">
+    <header>
+        <div class="header-brand">
+            <img src="images/logo.png" alt="MCTiers Logo" class="logo-img">
+            <h2>MCTiers League</h2>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Registration</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <h1 style="text-align: center;">Player Registration Form</h1>
-        <p style="text-align: center;">Fill out the form below to register for upcoming qualification duels.</p>
+    <aside>
+        <h2>Instructions</h2>
+        <p>Fill out your actual IGN and Discord tag to successfully pass the verification process.</p>
+    </aside>
 
-        <form id="registration-form" action="#" method="post">
-            
+    <main>
+        <h1>Player Registration</h1>
+        <p>Join upcoming qualification duels.</p>
+
+        <form>
             <div class="form-group">
-                <label for="username">Minecraft Username / IGN:</label>
-                <input type="text" id="username" name="username" placeholder="e.g. Steve_PvP" required>
+                <label for="ign">Minecraft Username / IGN:</label>
+                <input type="text" id="ign" placeholder="e.g. Steve_PvP">
             </div>
 
             <div class="form-group">
                 <label for="email">Contact Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                <input type="email" id="email" placeholder="example@mail.com">
             </div>
 
             <div class="form-group">
-                <label for="discipline">Preferred Discipline (Kit):</label>
-                <select id="discipline" name="discipline" required>
-                    <option value="sword">Sword 1.9+</option>
-                    <option value="pot">PotPvP</option>
-                    <option value="uhc">UHC</option>
-                    <option value="crystal">Crystal PvP</option>
+                <label for="discipline">Preferred Discipline:</label>
+                <select id="discipline">
+                    <option>Sword 1.9+</option>
+                    <option>Axe PvP</option>
+                    <option>Crystal PvP</option>
+                    <option>Pot PvP</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="experience">PvP Experience & Discord Tag:</label>
-                <textarea id="experience" name="experience" rows="5" placeholder="Include your Discord tag and previous competitive experience..."></textarea>
+                <label for="experience">Experience & Discord Tag:</label>
+                <textarea id="experience" rows="4" placeholder="Discord: tag#0000"></textarea>
             </div>
 
-            <button type="submit" class="btn">Submit Application</button>
-
+            <button type="submit" class="card-btn">Submit Application</button>
         </form>
     </main>
 
     <footer>
         <p>Created by: Batyrkhan Uvayev & Yermek Sain | 2026</p>
     </footer>
+</div>
 
 </body>
 </html>
