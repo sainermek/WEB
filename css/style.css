@@ -352,6 +352,7 @@ tr:hover {
     font-family: inherit;
 }
 
+HEAD:css/Style.css
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
@@ -379,3 +380,8 @@ tr:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.btn:hover {
+    background-color: #2563ed;
+}
+
